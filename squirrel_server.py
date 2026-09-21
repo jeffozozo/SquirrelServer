@@ -124,7 +124,7 @@ class SquirrelServerHandler(BaseHTTPRequestHandler):
 
 def run():
     print("squirrel_server running at 0.0.0.0:8080")
-    listen = ("127.0.0.1", 8080)
+    listen = ("0.0.0.0", 8080)
     server = HTTPServer(listen, SquirrelServerHandler)
     server.serve_forever()
 
